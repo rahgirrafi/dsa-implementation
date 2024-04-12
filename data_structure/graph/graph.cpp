@@ -53,3 +53,17 @@ int main(){
     return 0;
 }
 
+/*
+How does it work?
+This code implements a graph data structure. 
+The graph is represented as an adjacency matrix. The Graph class has the following methods:
+- Graph(int V, int E): Constructor to initialize the graph with V vertices and E edges.
+- ~Graph(): Destructor to free the memory allocated for the adjacency matrix.
+- addEdge(int v, int w): Method to add an edge between vertices v and w.
+- removeEdge(int v, int w): Method to remove an edge between vertices v and w.
+- isEdge(int v, int w): Method to check if there is an edge between vertices v and w.
+- print(): Method to print the adjacency matrix of the graph.
+
+The main function creates a graph with 4 vertices and 4 edges, adds edges between vertices, and prints the adjacency matrix.
+
+*/
