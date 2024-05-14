@@ -21,7 +21,8 @@ class binaryTree {
         Node* root = nullptr;
         void insert(int data);
         void destroy(Node* leaf);
-        void print();
+        void iterativePrint();
+        void recursivePrint(Node* leaf);
 
 };
 

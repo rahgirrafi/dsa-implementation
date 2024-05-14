@@ -13,7 +13,7 @@ void binaryTree::destroy(Node* leaf) {
     }
 }
 
-void binaryTree::print() {
+void binaryTree::iterativePrint() {
     std::stack<Node*> stack;
     Node* current = root;
     if(current == nullptr) {
@@ -37,6 +37,14 @@ void binaryTree::print() {
             }       
         }   
     }  
+}
+
+void binaryTree::recursivePrint(Node* leaf){
+    if (leaf != nullptr) {
+        std::cout << leaf->data << " ";
+        recursivePrint(leaf->left);
+        recursivePrint(leaf->right);
+    }
 }
 
 void binaryTree::insert(int data) {
@@ -79,7 +87,8 @@ int main(){
 
 
 
-    tree.print();
+    tree.iterativePrint();
+    tree.recursivePrint(tree.root);
 }
 
       
